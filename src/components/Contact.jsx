@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Logo from "../assets/logo.svg";
+import Logout from "./Logout";
+
 
 
 const Contact = ({contacts, currentUser , changeChat}) => {
@@ -51,6 +53,7 @@ useEffect( () => {
                 </div>
                 <div className="username">
                   <h3>{contact.username}</h3>
+                  
                 </div>
               </div>
             );
@@ -66,6 +69,9 @@ useEffect( () => {
           <div className="username">
             <h2>{currentUserName}</h2>
           </div>
+          <div className="log">
+              <Logout/>
+            </div>
         </div>
       </Container>
     )}
@@ -123,9 +129,14 @@ const Container = styled.div`
       }
       .username {
         h3 {
+          
           color: white;
         }
       }
+      .log{
+        padding-left: 5%;
+      }
+      
     }
     .selected {
       background-color: #9a86f3;
