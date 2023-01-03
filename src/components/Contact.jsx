@@ -3,25 +3,30 @@ import styled from "styled-components";
 import Logo from "../assets/logo.svg";
 
 
-const Contact = (contacts, currentUser) => {
+const Contact = ({contacts, currentUser , changeChat}) => {
 const [currentUserName, setCurrentUserName] = useState(undefined)
 const [currentUserImage, setCurrentUserImage] = useState(undefined)
 const [currentSelected, setCurrentSelected] = useState(undefined)
+
+
+
 
 useEffect( () => {
     if(currentUser){
         setCurrentUserImage(currentUser.avatarImage);
         setCurrentUserName(currentUser.username);
      }
-    
   }, [currentUser]);
 
   const changeCurrentChat = (index, contact) => {
-    
+      setCurrentSelected(index)
+      changeChat(contact)
   };
 
   return (
     <>
+    
+    
     {currentUserImage && currentUserName && (
       <Container>
         <div className="brand">
@@ -41,7 +46,7 @@ useEffect( () => {
                 <div className="avatar">
                   <img
                     src={`data:image/svg+xml;base64,${contact.avatarImage}`}
-                    alt=""
+                    alt="avatar"
                   />
                 </div>
                 <div className="username">
