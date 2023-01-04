@@ -54,9 +54,9 @@ const Container = styled.div`
   grid-template-columns: 5% 95%;
   background-color: #080420;
   padding: 0 2rem;
-  @media screen and (min-width: 720px) and (max-width: 1080px) {
+  @media screen and (min-width: 400px)  {
     padding: 0 1rem;
-    gap: 1rem;
+    gap: 0.6rem;
   }
   .button-container {
     display: flex;
@@ -69,6 +69,7 @@ const Container = styled.div`
         font-size: 1.5rem;
         color: #ffff00c8;
         cursor: pointer;
+        
       }
       .emoji-picker-react {
         position: absolute;
@@ -120,6 +121,10 @@ const Container = styled.div`
       &:focus {
         outline: none;
       }
+      @media screen and (min-width: 400px)  {
+          font-size: 0.6rem;
+          padding-left: 0.8rem;
+        }
     }
     button {
       padding: 0.3rem 2rem;
@@ -129,15 +134,15 @@ const Container = styled.div`
       align-items: center;
       background-color: #9a86f3;
       border: none;
-      @media screen and (min-width: 720px) and (max-width: 1080px) {
-        padding: 0.3rem 1rem;
-        svg {
-          font-size: 1rem;
-        }
-      }
+      @media screen and (min-width: 400px)  {
+        padding: 0.1rem 0.5rem;
+    }
       svg {
         font-size: 2rem;
         color: white;
+        @media screen and (min-width: 400px)  {
+          font-size: 1.1rem;
+        }
       }
     }
   }

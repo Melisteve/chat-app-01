@@ -35,11 +35,20 @@ const Container = styled.div`
   align-items: center;
   color: white;
   flex-direction: column;
+  @media screen and (min-width: 400px)  {
+            h1{
+              padding-left: 3rem;
+            }
+        }
+  
   img {
     height: 20rem;
+    @media screen and (min-width: 400px)  {
+            height: 15rem;
+        }
   }
   span {
-    color: #4e0eff;
+    color: #44bcd1;
   }
 `;
 

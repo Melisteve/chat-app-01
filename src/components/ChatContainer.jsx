@@ -111,18 +111,34 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    @media screen and (min-width: 400px)  {
+           padding: 0 1rem;
+        }
     .user-details {
       display: flex;
       align-items: center;
       gap: 1rem;
+      @media screen and (min-width: 400px)  {
+          gap: 0.3rem;
+        }
       .avatar {
         img {
           height: 3rem;
         }
+        @media screen and (min-width: 400px)  {
+             img {
+             height: 2rem;
+            }
+        }
       }
       .username {
-        h3 {
-          color: white;
+                h3 {
+             color: white;
+            }
+        @media screen and (min-width: 400px)  {
+              h3 {
+               font-size: 0.9rem;
+            }
         }
       }
     }
@@ -141,6 +157,11 @@ const Container = styled.div`
         border-radius: 1rem;
       }
     }
+
+    @media screen and (min-width: 400px)  {
+           padding: 0.3rem 0.8rem;
+           gap: 0.4rem;
+        }
     .message {
       display: flex;
       align-items: center;
@@ -151,23 +172,26 @@ const Container = styled.div`
         font-size: 1.1rem;
         border-radius: 1rem;
         color: #d1d1d1;
-        @media screen and (min-width: 720px) and (max-width: 1080px) {
+        @media screen and (min-width: 400px)  {
           max-width: 70%;
+          font-size: 0.9rem;
+          padding: 0.7rem;
         }
       }
     }
     .sended {
       justify-content: flex-end;
       .content {
-        background-color: #4f04ff21;
+        background-color: #481ba21f;
       }
     }
     .recieved {
       justify-content: flex-start;
       .content {
-        background-color: #9900ff20;
+        background-color: #095b0dda;
       }
     }
+    
   }
 `;
 

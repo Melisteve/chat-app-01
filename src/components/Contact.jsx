@@ -96,6 +96,18 @@ const Container = styled.div`
       color: white;
       text-transform: uppercase;
     }
+    @media screen  and (max-width: 400px) {
+      img {
+      height: 1rem;
+    }
+    h3 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      margin-right: 25px;
+
+    }
+    }
   }
   .contacts {
     display: flex;
@@ -126,16 +138,34 @@ const Container = styled.div`
         img {
           height: 3rem;
         }
+            @media screen and (min-width: 400px) {
+              img {
+                height: 2rem;
+                
+             }
+          }
       }
       .username {
         h3 {
           
           color: white;
         }
+        @media screen and (min-width: 400px) {
+              h3 {
+          
+                font-size: 0.8rem;
+                 
+              }
+          }
       }
       .log{
         padding-left: 5%;
       }
+
+      @media screen and (min-width: 400px) {
+            min-height: 2rem;
+            padding: 0.1rem;
+          }
       
     }
     .selected {
@@ -154,19 +184,26 @@ const Container = styled.div`
         height: 4rem;
         max-inline-size: 100%;
       }
+      @media screen and (min-width: 400px) {
+                  img {
+                      height: 2rem;
+                      max-inline-size: 100%;
+                }
+          }
     }
     .username {
       h2 {
         color: white;
       }
     }
-    @media screen and (min-width: 720px) and (max-width: 1080px) {
+    @media screen and (min-width: 400px) {
       gap: 0.5rem;
       .username {
         h2 {
           font-size: 1rem;
         }
       }
+      
     }
   }
 `;
