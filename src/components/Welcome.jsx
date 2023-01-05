@@ -35,7 +35,7 @@ const Container = styled.div`
   align-items: center;
   color: white;
   flex-direction: column;
-  @media screen and (min-width: 400px) and (max-width: 799px)  {
+  @media only screen and (max-width: 769px)  {
             h1{
               padding-left: 3rem;
             }
@@ -43,7 +43,7 @@ const Container = styled.div`
   
   img {
     height: 20rem;
-    @media screen and (min-width: 400px) and (max-width: 799px)  {
+    @media only screen and (max-width: 769px)  {
             height: 15rem;
         }
   }

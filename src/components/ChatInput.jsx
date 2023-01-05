@@ -54,7 +54,7 @@ const Container = styled.div`
   grid-template-columns: 5% 95%;
   background-color: #080420;
   padding: 0 2rem;
-  @media screen and (min-width: 400px)  {
+  @media only screen and (max-width: 769px)  {
     padding: 0 1rem;
     gap: 0.6rem;
   }
@@ -121,7 +121,7 @@ const Container = styled.div`
       &:focus {
         outline: none;
       }
-      @media screen and (min-width: 400px) and (max-width: 799px)  {
+      @media only screen and (max-width: 769px)  {
           font-size: 0.6rem;
           padding-left: 0.8rem;
         }
@@ -134,13 +134,13 @@ const Container = styled.div`
       align-items: center;
       background-color: #9a86f3;
       border: none;
-      @media screen and (min-width: 400px) and (max-width: 799px)  {
+      @media only screen and (max-width: 769px)  {
         padding: 0.1rem 0.5rem;
     }
       svg {
         font-size: 2rem;
         color: white;
-        @media screen and (min-width: 400px) and (max-width: 799px)  {
+        @media only screen and (max-width: 769px)  {
           font-size: 1.1rem;
         }
       }

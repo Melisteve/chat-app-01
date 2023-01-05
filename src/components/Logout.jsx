@@ -28,7 +28,7 @@ const Button = styled.button`
   svg {
     font-size: 1.3rem;
     color: #ebe7ff;
-    @media screen and (min-width: 400px) and (max-width: 799px)  {
+    @media only screen and (max-width: 769px)  {
       font-size: 0.8rem;
     }
   }

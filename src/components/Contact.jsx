@@ -96,7 +96,7 @@ const Container = styled.div`
       color: white;
       text-transform: uppercase;
     }
-    @media screen and (min-width: 400px) and (max-width: 799px) {
+    @media only screen and (max-width: 769px) {
       img {
       height: 1rem;
     }
@@ -138,7 +138,7 @@ const Container = styled.div`
         img {
           height: 3rem;
         }
-        @media screen and (min-width: 400px) and (max-width: 799px) {
+        @media only screen and (max-width: 769px) {
               img {
                 height: 2rem;
                 
@@ -150,7 +150,7 @@ const Container = styled.div`
           
           color: white;
         }
-        @media screen and (min-width: 400px) and (max-width: 799px) {
+        @media only screen and (max-width: 769px) {
               h3 {
           
                 font-size: 0.8rem;
@@ -162,7 +162,7 @@ const Container = styled.div`
         padding-left: 5%;
       }
 
-      @media screen and (min-width: 400px) and (max-width: 799px) {
+      @media only screen and (max-width: 769px) {
             min-height: 2rem;
             padding: 0.1rem;
           }
@@ -184,7 +184,7 @@ const Container = styled.div`
         height: 4rem;
         max-inline-size: 100%;
       }
-      @media screen and (min-width: 400px) {
+      @media only screen and (max-width: 769px) {
                   img {
                       height: 2rem;
                       max-inline-size: 100%;
@@ -196,7 +196,7 @@ const Container = styled.div`
         color: white;
       }
     }
-    @media screen and (min-width: 400px) and (max-width: 799px) {
+    @media only screen and (max-width: 769px) {
       gap: 0.5rem;
       .username {
         h2 {

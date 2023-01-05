@@ -103,7 +103,7 @@ const Container = styled.div`
   grid-template-rows: 10% 80% 10%;
   gap: 0.1rem;
   overflow: hidden;
-  @media screen and (min-width: 400px) and (max-width: 799px) {
+  @media only screen and (max-width: 769px) {
     grid-template-rows: 15% 70% 15%;
   }
   .chat-header {
@@ -111,21 +111,21 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    @media screen and (min-width: 400px) and (max-width: 799px)  {
+    @media only screen and (max-width: 769px) {
            padding: 0 1rem;
         }
     .user-details {
       display: flex;
       align-items: center;
       gap: 1rem;
-      @media screen and (min-width: 400px) and (max-width: 799px) {
+      @media only screen and (max-width: 769px){
           gap: 0.3rem;
         }
       .avatar {
         img {
           height: 3rem;
         }
-        @media screen and (min-width: 400px) and (max-width: 799px)  {
+        @media only screen and (max-width: 769px)  {
              img {
              height: 2rem;
             }
@@ -135,7 +135,7 @@ const Container = styled.div`
                 h3 {
              color: white;
             }
-            @media screen and (min-width: 400px) and (max-width: 799px)  {
+            @media only screen and (max-width: 769px)  {
               h3 {
                font-size: 0.9rem;
             }
@@ -158,7 +158,7 @@ const Container = styled.div`
       }
     }
 
-    @media screen and (min-width: 400px) and (max-width: 799px)  {
+    @media only screen and (max-width: 769px)  {
            padding: 0.3rem 0.8rem;
            gap: 0.4rem;
         }
@@ -172,7 +172,7 @@ const Container = styled.div`
         font-size: 1.1rem;
         border-radius: 1rem;
         color: #d1d1d1;
-        @media screen and (min-width: 400px) and (max-width: 799px)  {
+        @media only screen and (max-width: 769px)  {
           max-width: 70%;
           font-size: 0.9rem;
           padding: 0.7rem;
@@ -182,13 +182,13 @@ const Container = styled.div`
     .sended {
       justify-content: flex-end;
       .content {
-        background-color: #481ba21f;
+        background-color: #14cc111f;
       }
     }
     .recieved {
       justify-content: flex-start;
       .content {
-        background-color: #095b0dda;
+        background-color: #6e5206;
       }
     }
     

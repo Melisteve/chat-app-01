@@ -124,7 +124,7 @@ const Container = styled.div`
   background-color: #131324;
   height: 100vh;
   width: 100vw;
-  @media screen and (min-width: 400px) and (max-width: 799px){
+  @media only screen and (max-width: 769px){
       gap: 2rem;
     }
 
@@ -136,7 +136,7 @@ const Container = styled.div`
     h1 {
       color: white;
     }
-    @media screen and (min-width: 400px) and (max-width: 799px){
+    @media only screen and (max-width: 769px){
          h1 {
           color: white;
           font-size: 1.3rem;
@@ -147,7 +147,7 @@ const Container = styled.div`
   .avatars {
     display: flex;
     gap: 2rem;
-    @media screen and (min-width: 400px) and (max-width: 799px){
+    @media only screen and (max-width: 769px){
         gap: 1rem;
     }
     .avatar {
@@ -162,7 +162,7 @@ const Container = styled.div`
         height: 6rem;
         transition: 0.5s ease-in-out;
       }
-      @media screen and (min-width: 400px) and (max-width: 799px){
+      @media only screen and (max-width: 769px){
         padding: 0.1rem;
         img {
         height: 4rem;
